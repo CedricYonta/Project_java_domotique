@@ -1,10 +1,24 @@
 import java.util.Scanner;
 
+import chambre1.Chambre1;
+import chambre2.Chambre2;
+import chambre3.Chambre3;
+import cuisine.Cuisine;
+import garage.Garage;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        
             
+
+       Chambre1 room1 = new Chambre1();
+       Chambre2 room2 = new Chambre2();
+       Chambre3 room3 = new Chambre3();
+       Cuisine cuisine = new Cuisine();
+       Garage garage = new Garage();
+
+
+
+        
         Scanner scanne = new Scanner(System.in);
 
         int choice = 0;
@@ -34,7 +48,34 @@ public class App {
                   break;
   
               case 4:
-                      
+                            System.out.println("Choisir l'action");
+                            System.out.println( "1- activer le chauffage" );
+                            System.out.println( "2- desactiver le chauffage" );
+
+                            switch (choice) {
+                            case 1:    
+                                        try{
+                                                cuisine.activer();
+                                                cuisine.toString();
+
+                                        } catch (Exception e) {
+                                        System.out.println(e.getMessage());
+                                        }
+                                        finally
+                                        {
+                                            System.out.println("L'instruction a toujours été exécuté.");
+                                        }
+                                break;
+
+                            case 2:
+                                       cuisine.desactiver();
+                                       cuisine.toString();
+                                break;
+                           
+                            default:
+                                   System.out.println( "Entrer le numero correspondant à l'action" );
+                                break;
+                           }
                   break;
 
              case 5:
@@ -50,5 +91,6 @@ public class App {
          }
 
         // activer désactiver doivent ils etre précis ?
+        // finalize()
     }
 }

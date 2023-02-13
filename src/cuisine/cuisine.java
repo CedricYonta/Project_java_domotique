@@ -19,10 +19,13 @@ public class Cuisine {
         this.heatingStatus = heatingStatus;
     }
 
-    public void activer() {
+    public void activer() throws Exception {
+        if (this.heatingStatus == true) {
+           throw new Exception("Le chauffage est déjà activé");
+        }
         this.heatingStatus = true;
-   }
-
+     }
+     
    
    public void desactiver() {
        this.heatingStatus = false;
