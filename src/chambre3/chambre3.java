@@ -1,13 +1,13 @@
 package chambre3;
 
-import chambre1.chambreMère;
+import chambre1.ChambreMère;
 
-public class chambre3 extends chambreMère {
+public class Chambre3 extends ChambreMère {
     final int numChambre = 3 ;
           boolean alexaStatus ;
 
 
-    public chambre3() {
+    public Chambre3() {
     }
 
     public int getNumChambre() {

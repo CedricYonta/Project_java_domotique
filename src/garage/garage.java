@@ -1,11 +1,11 @@
 package garage;
 
-public class garage {
+public class Garage {
     boolean doorStatus;
 
 
 
-    public garage() {
+    public Garage() {
     }
 
 

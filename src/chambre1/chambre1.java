@@ -1,11 +1,11 @@
 package chambre1;
 
-public class chambre1 extends chambreMère {
+public class Chambre1 extends ChambreMère {
     final int numChambre = 1 ;
           boolean lightStatus ;
 
 
-    public chambre1() {
+    public Chambre1() {
     }
 
 

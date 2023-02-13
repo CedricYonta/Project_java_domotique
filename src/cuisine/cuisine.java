@@ -1,10 +1,10 @@
 package cuisine;
 
-public class cuisine {
+public class Cuisine {
     boolean heatingStatus ; 
 
 
-    public cuisine() {
+    public Cuisine() {
     }
 
     public boolean isHeatingStatus() {

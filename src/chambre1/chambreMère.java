@@ -1,10 +1,10 @@
 package chambre1;
 
-public  abstract class chambreMère {
+public  abstract class ChambreMère {
     final int numChambre = 1;
 
 
-    public chambreMère() {
+    public ChambreMère() {
     }
     
     public int getNumChambre() {

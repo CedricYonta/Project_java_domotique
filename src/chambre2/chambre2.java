@@ -1,18 +1,16 @@
 package chambre2;
 
-import chambre1.chambreMère;
+import chambre1.ChambreMère;
 
-public class chambre2 extends chambreMère{
+public class Chambre2 extends ChambreMère{
     final int numChambre = 2 ;
           boolean climStatus ;
  
 
-    public chambre2() {
+    public Chambre2() {
     }
 
-    public chambre2(boolean climStatus) {
-        this.climStatus = climStatus;
-    }
+
 
     public int getNumChambre() {
         return this.numChambre;
