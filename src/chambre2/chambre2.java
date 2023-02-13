@@ -3,7 +3,7 @@ package chambre2;
 import chambre1.chambreMère;
 
 public class chambre2 extends chambreMère{
-    final int numChambre = 1 ;
+    final int numChambre = 2 ;
           boolean climStatus ;
  
 
