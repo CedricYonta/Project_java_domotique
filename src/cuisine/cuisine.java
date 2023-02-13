@@ -27,7 +27,10 @@ public class Cuisine {
      }
      
    
-   public void desactiver() {
+   public void desactiver() throws Exception{
+        if (this.heatingStatus == false) {
+            throw new Exception("Le chauffage est déjà desactivé");
+        }
        this.heatingStatus = false;
   }
 
