@@ -1,6 +1,9 @@
 package garage;
 
-public class Garage {
+import salle.Salle;
+
+public class Garage extends Salle {
+    final int numSalle = 3;
     boolean doorStatus;
 
 
@@ -17,24 +20,38 @@ public class Garage {
         return this.doorStatus;
     }
 
+    public int getNumSalle() {
+        return this.numSalle;
+    }
+
+
     public void setDoorStatus(boolean doorStatus) {
         this.doorStatus = doorStatus;
     }
 
-    public void open() {
+    public void activer() throws Exception {
+        if (this.doorStatus == true) {
+           throw new Exception("La porte déjà ouverte");
+        }
         this.doorStatus = true;
-    }
-
-    public void close () {
-        this.doorStatus = false;
-    }
+     }
+     
+   
+   public void desactiver() throws Exception{
+        if (this.doorStatus == false) {
+            throw new Exception("La porte est déjà fermé");
+        }
+       this.doorStatus = false;
+  }
 
 
     @Override
     public String toString() {
         return "{" +
-            " doorStatus='" + isDoorStatus() + "'" +
+            " numSalle='" + getNumSalle() + "'" +
+            ", doorStatus='" + isDoorStatus() + "'" +
             "}";
     }
 
+     
 }

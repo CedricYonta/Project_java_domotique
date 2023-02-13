@@ -1,6 +1,7 @@
 package chambre1;
+import salle.Salle;
 
-public class Chambre1 extends ChambreMère {
+public class Chambre1 extends Salle{
     final int numChambre = 1 ;
           boolean lightStatus ;
 
@@ -27,15 +28,20 @@ public class Chambre1 extends ChambreMère {
         this.lightStatus = lightStatus;
     }
 
-    public void activer() {
-         this.lightStatus = true;
-    }
-
-    
-    public void desactiver() {
-        this.lightStatus = false;
-   }
-
+    public void activer() throws Exception {
+        if (this.lightStatus == true) {
+           throw new Exception("La lumière est déjà activé");
+        }
+        this.lightStatus = true;
+     }
+     
+   
+   public void desactiver() throws Exception{
+        if (this.lightStatus == false) {
+            throw new Exception ("La lumière est déjà désactivé");
+        }
+       this.lightStatus = false;
+  }
 
     @Override
     public String toString() {

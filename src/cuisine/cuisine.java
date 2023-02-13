@@ -1,11 +1,19 @@
 package cuisine;
 
-public class Cuisine {
+import salle.Salle;
+
+public class Cuisine extends Salle {
+    final int numSalle = 2;
     boolean heatingStatus ; 
 
 
     public Cuisine() {
     }
+
+    public int getNumSalle() {
+        return this.numSalle;
+    }
+
 
     public boolean isHeatingStatus() {
         return this.heatingStatus;
@@ -33,12 +41,17 @@ public class Cuisine {
         }
        this.heatingStatus = false;
   }
+   
 
-    @Override
-    public String toString() {
-        return "{" +
-            " heatingStatus='" + isHeatingStatus() + "'" +
-            "}";
-    }
+  @Override
+  public String toString() {
+      return "{" +
+          " numSalle='" + getNumSalle() + "'" +
+          ", heatingStatus='" + isHeatingStatus() + "'" +
+          "}";
+  }
+    
 
 }
+
+   
