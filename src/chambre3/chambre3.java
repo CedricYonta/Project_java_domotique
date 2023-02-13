@@ -26,7 +26,15 @@ public class chambre3 extends chambreMère {
     public void setAlexaStatus(boolean alexaStatus) {
         this.alexaStatus = alexaStatus;
     }
+    
+    public void activer() {
+        this.alexaStatus = true;
+   }
 
+   
+   public void desactiver() {
+       this.alexaStatus = false;
+  }
 
     @Override
     public String toString() {

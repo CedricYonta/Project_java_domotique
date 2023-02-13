@@ -11,12 +11,19 @@ public  abstract class chambreMère {
         return this.numChambre;
     }
 
+
+    public abstract void activer();
+
+    public abstract void desactiver();
+
     @Override
     public String toString() {
         return "{" +
             " numChambre='" + getNumChambre() + "'" +
             "}";
     }
+
+
     
     
 }

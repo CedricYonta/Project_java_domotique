@@ -4,9 +4,11 @@ public class chambre1 extends chambreMère {
     final int numChambre = 1 ;
           boolean lightStatus ;
 
+
     public chambre1() {
     }
-    
+
+
 
     public int getNumChambre() {
         return this.numChambre;
@@ -25,6 +27,15 @@ public class chambre1 extends chambreMère {
         this.lightStatus = lightStatus;
     }
 
+    public void activer() {
+         this.lightStatus = true;
+    }
+
+    
+    public void desactiver() {
+        this.lightStatus = false;
+   }
+
 
     @Override
     public String toString() {
@@ -33,6 +44,7 @@ public class chambre1 extends chambreMère {
             ", lightStatus='" + isLightStatus() + "'" +
             "}";
     }
+   
     
 
 }

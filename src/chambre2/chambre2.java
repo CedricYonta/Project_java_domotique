@@ -31,10 +31,14 @@ public class chambre2 extends chambreMère{
         this.climStatus = climStatus;
     }
 
-    public chambre2 climStatus(boolean climStatus) {
-        setClimStatus(climStatus);
-        return this;
-    }
+    public void activer() {
+        this.climStatus = true;
+   }
+
+   
+   public void desactiver() {
+       this.climStatus = false;
+  }
 
 
     @Override
