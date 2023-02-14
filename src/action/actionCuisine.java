@@ -45,6 +45,7 @@ public class actionCuisine {
                                     finally
                                     {
                                         System.out.println("L'instruction a toujours été exécuté.");// Affichage d'un message indiquant que cette instruction a toujours été exécutée
+                                        //cuisine.finalize();
                                     }
                             break;
 
@@ -61,6 +62,7 @@ public class actionCuisine {
                                     {        
                                              // Affichage d'un message indiquant que cette instruction a toujours été exécutée
                                             System.out.println("L'instruction a toujours été exécuté.");
+                                            //cuisine.finalize();
                                           
                                     }
                             break;

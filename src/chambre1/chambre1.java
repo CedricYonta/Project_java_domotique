@@ -47,6 +47,16 @@ public class Chambre1 extends Salle{
        this.lightStatus = false;
   }
 
+  /*protected void finalize() throws Throwable {
+
+    // code à exécuter lorsque l'objet est finalisé
+
+    System.out.println("L'objet Cuisine est finalisé");
+
+    super.finalize();
+
+}*/
+
   // Retourne une représentation textuelle de l'objet
     @Override
     public String toString() {

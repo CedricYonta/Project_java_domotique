@@ -42,6 +42,7 @@ public class actionChambre1 {
                         finally
                         {
                             System.out.println("L'instruction a toujours été exécuté.");// Affichage d'un message indiquant que cette instruction a toujours été exécutée
+                            //chambre.finalize();
                         }
                 break;
 
@@ -58,6 +59,7 @@ public class actionChambre1 {
                         {       
                                 
                                 System.out.println("L'instruction a toujours été exécuté.");
+                                //chambre.finalize();
                         }
                 break;
             

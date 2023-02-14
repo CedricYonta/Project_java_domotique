@@ -71,6 +71,16 @@ public class Cuisine extends Salle {
        this.heatingStatus = false;
   }
    
+  protected void finalize() throws Throwable {
+
+    // code à exécuter lorsque l'objet est finalisé
+
+    System.out.println("L'objet Cuisine est finalisé");
+
+    super.finalize();
+
+}
+
 /**
     * Retourne les informations sur la cuisine sous forme de chaîne de caractères.
     */

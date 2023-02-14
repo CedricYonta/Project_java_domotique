@@ -42,6 +42,7 @@ public class actionGarage {
                                     finally
                                     {
                                         System.out.println("L'instruction a toujours été exécuté.");// Affichage d'un message indiquant que cette instruction a toujours été exécutée
+                                        //garage.finalize();
                                     }
                             break;
 
@@ -57,6 +58,7 @@ public class actionGarage {
                                     {       
                                              // Affichage d'un message indiquant que cette instruction a toujours été exécutée
                                             System.out.println("L'instruction a toujours été exécuté.");
+                                            //garage.finalize();
                                     }
                             break;
                         

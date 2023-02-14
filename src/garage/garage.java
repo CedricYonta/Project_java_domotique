@@ -53,6 +53,16 @@ public class Garage extends Salle {
        this.doorStatus = false;
   }
 
+  protected void finalize() throws Throwable {
+
+    // code à exécuter lorsque l'objet est finalisé
+
+    System.out.println("L'objet Garage est finalisé");
+
+    super.finalize();
+
+}
+
      // Redéfinition de la méthode toString()
     @Override
     public String toString() {
