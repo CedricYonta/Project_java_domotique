@@ -56,13 +56,13 @@ public class actionChambre1 {
                         }
                         finally
                         {       
-                                // Affichage d'un message indiquant que cette instruction a toujours été exécutée
+                                
                                 System.out.println("L'instruction a toujours été exécuté.");
                         }
                 break;
             
             default:
-                    System.out.println( "Entrer le numero correspondant à l'action" );// Afficher un message d'erreur si le choix n'est pas valide
+                    System.out.println( "Entrer le numero correspondant à l'action" );
                 break;
             }
     }

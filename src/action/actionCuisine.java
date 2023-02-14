@@ -7,17 +7,6 @@ import java.util.Scanner;
 // Classe pour les actions dans la cuisine
 public class actionCuisine {
     
-        protected void finalize() throws Throwable {
-
-                // code à exécuter lorsque l'objet est finalisé
-        
-                System.out.println("L'objet Cuisine est finalisé");
-        
-                super.finalize();
-        
-            }
-        
-     }
 
      // Méthode pour les actions dans la chambre 
     public void action(){
