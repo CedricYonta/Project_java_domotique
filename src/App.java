@@ -1,3 +1,13 @@
+/*
+  Titre      : house control
+  Auteur     : Cedric Yonta
+  Date       : 26/02/2023
+  Description: un projet java qui utilise les concepts de la domotique
+  Version    : 0.0.1
+*/
+
+
+
 import java.util.Scanner;
 import action.*;
 
